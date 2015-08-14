@@ -15,22 +15,15 @@ class JcaptchaSpringSecurityGrailsPlugin {
     def authorEmail = "sudhir@nimavat.me"
     def description = "Jcaptcha for spring security"
 
-    def documentation = "http://grails.org/plugin/jcaptcha-spring-security"
+    def documentation = "http://grails.org/plugin/jcaptcha-spring-security"    
 
-
-    def license = "APACHE"
-
-    // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
-
-    // Location of the plugin's issue tracker.
-//    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
-
-    // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+	def issueManagement = [ system: "Github", url: "https://github.com/snimavat/jcaptcha-spring-security/issues" ]   
+	def scm = [ url: "https://github.com/snimavat/jcaptcha-spring-security" ]
 
     def loadAfter = ['springSecurityCore']
 
+	def license = "APACHE"
+	
     def doWithSpring = {
         authenticationFailureListener(AuthenticationFailureListener) {
             loginAttemptCacheService = ref('loginAttemptCacheService')
