@@ -18,11 +18,12 @@ grails.project.dependency.resolution = {
 
     dependencies {
         compile "com.google.guava:guava:14.0-rc1"
+        compile 'net.sf.ehcache:ehcache-core:2.6.9' //spring security needs it, cane be removed when updated to spring-security-core:2.0-RC5
     }
 
     plugins {
         compile ":jcaptcha:1.5.0"
-        //compile ":spring-security-core:2.0-RC4"
+        compile ":spring-security-core:2.0-RC4"
         build(":release:3.0.1", ":rest-client-builder:1.0.3") {
             export = false
         }
