@@ -86,4 +86,4 @@ It will display the image captcha along with the input text field after allowed 
 
 ## Customize the captcha style / markup
 
-You can override the template by copying /templates/_jcaptchaLogin.gsp to your application at path grails-app/views/templates/_jcaptchaLogin.gsp. And customize it as per your need.
+You can override the template by copying /templates/_jcaptchaLogin.gsp from plugin to your application at path grails-app/views/templates/_jcaptchaLogin.gsp. And customize it as per your need.
