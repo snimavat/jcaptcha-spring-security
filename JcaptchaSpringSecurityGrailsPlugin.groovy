@@ -6,7 +6,7 @@ import grails.plugin.springsecurity.SpringSecurityUtils
 
 class JcaptchaSpringSecurityGrailsPlugin {
 
-    def version = "0.1"
+    def version = "1.0"
     def grailsVersion = "2.0 > *"
 
     def title = "Jcaptcha for Spring Security Plugin"
