@@ -6,6 +6,24 @@ Jcaptcha spring security plugin integrates [Jcaptch plugin](https://grails.org/p
 ## Installing the plugin
 
 ```
+grails {
+	project {
+		dependency.resolution = {
+			repositories {
+			......
+			.....
+			
+				//below two repositories are needed by jcaptcha
+				mavenRepo 'http://maven.jahia.org/maven2/'
+				mavenRepo 'http://maven.it.su.se/nexus/content/groups/public/'
+			}
+
+		}
+
+	}
+
+}
+
 plugins {
     compile ':jcaptcha-spring-security:0.1'
 }
